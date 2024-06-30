@@ -17,12 +17,13 @@ cout << "\n Enter the number of rooms required : ";
             Price_of_rooms += (quantity * 2000) * 1.02;
 
             cout << "\n " << quantity << " Rooms are alloted to you" << endl;
+            Qrooms-=quantity;
         }
         else
         {
             cout << "\n Only " << Qrooms  << " rooms are available in Hotel" << endl;
         }
-        Qrooms-=quantity;
+        
 }
 
 void CookiesInHotel(int &quantity,int &Qcookies,int &Scookies,int &Price_of_cookies){
@@ -39,12 +40,13 @@ cout << "\n Enter the quantity of Cookies you want to ordered : ";
             Price_of_cookies += (quantity * 50) * 1.01;
 
             cout << "\n " << quantity << " Cookies are ordred by you" << endl;
+                Qcookies-=quantity;
         }
         else
         {
             cout << "\n Only " << Qcookies << " cookies are available in Hotel" << endl;
         }
-        Qcookies-=quantity;
+        
 }
 void pizzasInHotel(int &quantity,int &Qpizzas,int &Spizzas,int &Price_of_pizzas){
     cout << "\n Enter the quantity of Pizzas you want to ordered : ";
@@ -60,12 +62,13 @@ void pizzasInHotel(int &quantity,int &Qpizzas,int &Spizzas,int &Price_of_pizzas)
             Price_of_pizzas += (quantity * 350) * 1.01;
 
             cout << "\n " << quantity << " Pizzas are ordred by you" << endl;
+                Qpizzas-=quantity;
         }
         else
         {
             cout << "\n Only " << Qpizzas  << " pizzas are available in Hotel" << endl;
         }
-        Qpizzas-=quantity;
+        
 }
 void BurgerInHotel(int &quantity,int &Qburgers,int &Sburgers,int &Price_of_burgers){
     cout << "\n Enter the quantity of Burgers you want to ordered : ";
@@ -81,12 +84,13 @@ void BurgerInHotel(int &quantity,int &Qburgers,int &Sburgers,int &Price_of_burge
             Price_of_burgers += (quantity * 250) * 1.01;
 
             cout << "\n " << quantity << " Burgers are ordred by you" << endl;
+        Qburgers-=quantity;
+                
         }
         else
         {
             cout << "\n Only " << Qburgers  << " burgers are available in Hotel" << endl;
         }
-        Qburgers-=quantity;
 }
 
 void NoodlesInHotel(int &quantity,int &Qnoodles,int &Snoodles,int &Price_of_noodles){
@@ -103,12 +107,13 @@ void NoodlesInHotel(int &quantity,int &Qnoodles,int &Snoodles,int &Price_of_nood
             Price_of_noodles += (quantity * 80) * 1.01;
 
             cout << "\n " << quantity << " Plate/Plates of noodles are ordred by you" << endl;
+                Qnoodles-=quantity;
         }
         else
         {
             cout << "\n Only " << Qnoodles  << " plates of noodles are available in Hotel" << endl;
         }
-        Qnoodles-=quantity;
+        
 }
 
 void OrderedItems(int &Price_of_rooms,int &Price_of_cookies,int &Price_of_pizzas,int &Price_of_burgers,int &Price_of_noodles){
